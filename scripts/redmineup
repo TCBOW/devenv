@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo docker start test-redmine
+sudo docker start test-postgres

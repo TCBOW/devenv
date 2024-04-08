@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo apt install git-flow git
+git config --global user.email tochibow9@td5.so-net.ne.jp
+git config --global user.name 110662
+
+#
+cat ~/.gitconfig
+
+git clone https://github.com/vim/vim.git ~/git/Devenv/tools/vim
+git clone https://github.com/byebug.git ~/git/Devenv/tools/byebug
+
+

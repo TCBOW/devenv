@@ -1,0 +1,2 @@
+#!/bin/sh
+grep -rn '$1' $2 --exclude-dir=.svn --exclude-from=*.o

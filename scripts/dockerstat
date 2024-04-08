@@ -1,0 +1,17 @@
+#!/bin/sh
+
+touch dockerstat.log
+echo "### docker version " >> dockerstat.log
+docker version >> dockerstat.log
+echo "### docker ps -a " >> dockerstat.log
+docker ps -a >> dockerstat.log
+
+echo "### docker info " >> dockerstat.log
+docker info >> dockerstat.log
+echo "### docker network ls " >> dockerstat.log
+docker network ls >> dockerstat.log
+
+# docker network inspect 接続しているコンテナと特定ネットワーク上のネットワーク全てを表示する。
+echo "### docker network inspect bridge " >> dockerstat.log
+echo "bridge接続しているコンテナと特定ネットワーク上のネットワーク全てを表示する。"
+docker network inspect bridge >> dockerstat.log

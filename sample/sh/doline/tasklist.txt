@@ -1,0 +1,3 @@
+task/0.sh
+task/1.sh
+task/2.sh

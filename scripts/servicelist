@@ -1,0 +1,5 @@
+#!/bin/sh
+systemctl list-unit-files --type=service
+
+ls -l /etc/systemd/system/
+ls -l /etc/systemd/system/multi-user.target.wants

@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable Wake-On-Lan
+
+[Service]
+Type=simple
+ExecStart=/home/tochibow9/git/devenv/scripts/wolg
+Restart=no
+User=root
+
+[Install]
+WantedBy=multi-user.target

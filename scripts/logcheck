@@ -1,0 +1,10 @@
+#/bin/sh
+
+#ログを確認
+cat /var/log/messages | tee var_log_messages.log
+cat /var/log/secure | tee var_log_secure.log
+cat /var/log/dmesg | tee /var_log_dmesg.log
+cat /var/log/maillog | tee var_log_maillog.log
+cat /var/log/httpd | tee /var_log_httpd.log
+
+

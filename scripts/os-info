@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -e /etc/os-release ]; then
+    cat /etc/os-release
+elif [ -e /etc/system-release ]; then
+    cat /etc/system-release
+fi
+
+    uname -a

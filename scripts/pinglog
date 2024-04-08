@@ -1,0 +1,69 @@
+#!/bin/sh
+
+
+function usage {
+    cat <<EOF
+$(basename ${0}) is a tool for ...
+
+Usage:
+    $(basename ${0}) [command] [<options>]
+
+Options:
+    --version, -v     print $(basename ${0}) version
+    --help, -h        print this
+    --debug, -d       debug mode (-x)
+EOF
+}
+
+function version {
+    echo "$(basename ${0}) version 0.0.1 "
+}
+
+red=31
+green=32
+yellow=33
+blue=34
+
+function cecho {
+    color=$1
+    shift
+    echo "\033[${color}m$@\033[m"
+}
+
+cecho $red "pinglog"
+
+while [ $# -gt 0 ];
+do
+    case ${1} in
+
+        --debug|-d)
+            set -x
+        ;;
+
+        --host|-h)
+            HOST=${2}
+            shift
+        ;;
+
+        --port|-p)
+            PORT=${2}
+            shift
+        ;;
+        --help|-h)
+            usage
+            exit 0 
+        ;; 
+        --version|-v)
+            version
+            exit 0 
+        ;;
+        *)
+            echo "[ERROR] Invalid option '${1}'"
+            usage
+            exit 1
+        ;;
+    esac
+    shift
+done
+
+

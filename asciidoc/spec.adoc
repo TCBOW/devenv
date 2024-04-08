@@ -1,0 +1,117 @@
+:table-caption: Table
+:figure-caption: Figure
+
+= Requirements definition of Tech Blog System - Version 1.0 - 2022-04-21
+
+[.cover-project]
+Tech Blog System:
+
+[.cover-document]
+Requirements Definition
+
+[.cover-version]
+Version 1.0
+
+[.cover-date]
+May 15st, 2023
+
+[.cover-company]
+Craft Networks Co. Ltd.
+
+[.cover-address]
+Yanokuchi, Inagi city, Tokyo prefecture, Japan.
+
+[.cover-tel]
+TEL: +81-***-**-****
+
+[.cover-email]
+E-mail: sales@exmaple.com
+
+
+
+== Purpose and structure
+
+The purpose of this document is to build consensus between the outsourcer and the outsourcee of this system development by defining the functional requirements of the system. The structure of this document is shown below.
+
+. Purpose and structure
+. List of pages
+. Page layout
+. Top page
+. Article list page
+. Article detail page
+. Revision history
+
+
+
+== List of pages
+
+. Article list page
+. Article detail Page
+
+
+
+== Page layout
+
+=== Content
+
+. Header
+.. Logo link
+. Breadcrumb
+. Main content
+. Footer
+.. Copyright
+
+=== Behavior
+
+. When the user clicks the logo link, the system displays the top page.
+
+
+
+== Article list page
+
+=== Content
+
+. Main content
+.. List navigation
+... Article links
+.... Posted date
+.... Title
+
+=== Behavior
+
+. When the user clicks an article link, the system displays the article detail page.
+
+
+== Article detail page
+
+=== Content
+
+. Main content
+.. Menu
+... Back link
+.. Title
+.. Posted date
+.. Text
+.. Related posts navigation
+... Article links
+.... Posted date
+.... Title
+
+=== Behavior
+
+. When the user clicks the back link, the system displays the article list page.
+. When the user clicks an article link, the system displays the article detail page.
+
+
+
+== Revision history
+
+The revision history of this document is shown in the table below.
+
+.Revision history
+[cols="1,3,3,2"]
+|===
+| Version | Date | Comment | Author
+
+| 1.0 | May 15st, 2023 | The first edition | T. Sato 
+|===

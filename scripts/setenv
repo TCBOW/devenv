@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo Usage:  "setenv <ARG>"
+    echo "  <ARG>":
+    echo "         fluentd"
+    echo "         googletest"
+    exit 1
+fi
+
+ARG=$1
+
+if [ "$ARG" = "fluentd" ]; then
+    curl -fsSL https://toolbelt.treasuredata.com/sh/install-ubuntu-jammy-td-agent4.sh | sh 
+    echo do command "systemctl start td-agent.service"
+    echo do edit "/etc/td-agent/td-agent.conf"
+elif [ "$ARG" = "googletest" ]; then
+    sudo apt install cmake
+    cd ~/git
+    git clone https://github.com/google/googletest.git
+    mkdir -p googletest/mybuild
+    cd googletest/mybuild
+    cmake -DCMAKE_CXX_FLAGS="-std=c++11" ..
+    make
+    sudo make install 
+fi
+
+exit 0

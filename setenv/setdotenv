@@ -1,0 +1,37 @@
+#!/bin/bash
+if [ -f ~/.vim ]; then
+  mkdir -p ./bkup
+  mv ~/.vim ./bkup
+fi
+  ln -s ${HOME}/git/devenv/dotfiles/.vim ~/.vim
+
+if [ -f ~/.vimrc ]; then
+  mkdir -p ./bkup
+  mv ~/.vimrc ./bkup
+fi
+  ln -s ${HOME}/git/devenv/dotfiles/.vimrc ~/.vimrc
+  
+if [ -f ~/.bashrc ]; then
+  mkdir -p ./bkup
+  mv ~/.bashrc ./bkup
+fi
+  ln -s ${HOME}/git/devenv/dotfiles/.bashrc ~/.bashrc
+
+if [ -f ~/.bash_aliases ]; then
+  mkdir -p ./bkup
+  mv ~/.bash_aliases ./bkup
+fi
+  ln -s ${HOME}/git/devenv/dotfiles/.bash_aliases ~/.bash_aliases
+
+
+if [ -f ~/.dir_colors ]; then
+  mkdir -p ./bkup
+  mv ~/.dir_colors ./bkup
+fi
+  ln -s ${HOME}/git/devenv/dotfiles/.dir_colors ~/.dir_colors
+
+eval `dircolors ~/.dir_colors -b`
+sudo apt install -y python3-dev python3-pip
+sudo pip3 install thefuck
+
+exit 0
