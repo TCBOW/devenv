@@ -1,3 +1,13 @@
+### 二つ以上前のコミットを削除する
+    git rebase -i <commitID>
+
+pick 64ca8df Added first.txt
+pick 5e6448d Added second.txt <-この行を削除
+pick 1e0676b Added third.txt
+
+### コミット履歴からファイルのステータスを確認する
+    git log --name-status
+
 ### リモートへのpushを無かったことにする
     git log
     git checkout <commitID>
@@ -520,9 +530,26 @@ $ git flow hotfix track ver1.2.1
 $ git flow hotfix finish ver1.2.1
 バグ修正ブランチを終了、developとmasterにマージされ、masterにタグを残す
 
+### gitlab バックアップする
+    sudo gitlab-rake gitlab:backup:create
 
+    /var/opt/gitlab/backups　へ生成される
 
+### gitlab サービス起動、停止、再起動
+    gitlab-ctl start
+    gitlab-ctl stop
+    gitlab-ctl restart
+    
+### 設定の再構築
+    gitlab-ctl reconfigure
 
-
-
+### gitlab リストア
+    gitlab-ctl stop unicorn
+    gitlab-ctl stop sidekiq
+    gitlab-ctl status
+    
+    gitlab-rake gitlab:backup:restore BACKUP={対象ファイルの日付/時間部分まで}
+    
+    gitlab-ctl start
+    gitlab-rake gitlab:check SANITIZE=true
 
