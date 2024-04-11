@@ -1,0 +1,23 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Cheet Sheet
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=","
+nnoremap \ ,
+nnoremap <Leader>git :e ${HOME}/git/devenv/cs/gitcs.md
+nnoremap <Leader>python :e ${HOME}/git/devenv/cs/python.md
+nnoremap <Leader>vim :e ${HOME}/git/devenv/cs/vimcs.md
+nnoremap <Leader>etc :e ${HOME}/git/devenv/cs/etccs.md
+nnoremap <Leader>asm :e ${HOME}/git/devenv/cs/asm.md
+nnoremap <Leader>yocto :e ${HOME}/git/devenv/cs/yocto.md
+nnoremap <Leader>yaml :e ${HOME}/git/devenv/cs/yaml.md
+nnoremap <Leader>sh :e ${HOME}/git/devenv/cs/shell.md
+nnoremap <Leader>sec :e ${HOME}/git/devenv/cs/security.md
+nnoremap <Leader>ros :e ${HOME}/git/devenv/cs/ros.md
+nnoremap <Leader>gcc :e ${HOME}/git/devenv/cs/gcc.md
+nnoremap <Leader>make :e ${HOME}/git/devenv/cs/make.md
+nnoremap <Leader>gdb :e ${HOME}/git/devenv/cs/gdb.cs
+nnoremap <Leader>net :e ${HOME}/git/devenv/cs/net.cs
+nnoremap <Leader>c :e ${HOME}/git/devenv/cs/c.md
+nnoremap <Leader>hack :e ${HOME}/git/devenv/cs/hack.md
+nnoremap <Leader>kvm :e ${HOME}/git/devenv/cs/kvm.md
+ 

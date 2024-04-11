@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
-let g:netrw_dirhist_5='/home/tochibow9/git/Itest/Pcap'
-let g:netrw_dirhist_4='/home/tochibow9/git/pysock/src/httpd'
-let g:netrw_dirhist_3='/home/tochibow9/.vim/plugged/vdebug'
-let g:netrw_dirhist_2='/home/tochibow9/.vim/plugged'
-let g:netrw_dirhist_1='/home/tochibow9/.vim/plugged/markdown-preview.nvim'

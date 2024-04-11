@@ -13,6 +13,7 @@ my %alist = (
     "20" => "tochibow9\@192.168.122.71",
     "22" => "tochibow9\@192.168.1.14 -p 22222",
     "kali" => "tochibow9\@192.168.122.41",
+    "ec2" => "-i ~/.ssh/aws/ssh_key.pem ubuntu@ec2-18-181-218-104.ap-northeast-1.compute.amazonaws.com",
 );
 
 # キーワードごとの処理
