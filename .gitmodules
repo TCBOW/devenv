@@ -1,0 +1,15 @@
+[submodule "tools/fff"]
+	path = tools/fff
+	url = https://github.com/meekrosoft/fff.git
+[submodule "tools/googletest"]
+	path = tools/googletest
+	url = https://github.com/google/googletest
+[submodule "target/bluez"]
+	path = target/bluez
+	url = https://github.com/bluez/bluez.git
+[submodule "tools/vim"]
+	path = tools/vim
+	url = https://github.com/vim/vim.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = git@github.com:TCBOW/dotfiles.git
