@@ -20,4 +20,5 @@ nnoremap <Leader>net :e ${HOME}/git/devenv/cs/net.cs
 nnoremap <Leader>c :e ${HOME}/git/devenv/cs/c.md
 nnoremap <Leader>hack :e ${HOME}/git/devenv/cs/hack.md
 nnoremap <Leader>kvm :e ${HOME}/git/devenv/cs/kvm.md
+nnoremap <Leader>cpp :e ${HOME}/git/devenv/cs/cppcs.md
  
